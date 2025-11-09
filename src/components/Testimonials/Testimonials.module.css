@@ -198,7 +198,10 @@
 .read-more-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 3rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .read-more {

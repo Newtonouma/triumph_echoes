@@ -4,7 +4,11 @@ import React from 'react'
 import { testimonialsData } from '@/data'
 import styles from './Testimonials.module.css'
 
-const Testimonials = () => {
+interface TestimonialsProps {
+  onOpenTestimonialModal?: () => void;
+}
+
+const Testimonials = ({ onOpenTestimonialModal }: TestimonialsProps) => {
   return (
     <section className={styles['testimonials']}>
       <div className={styles['testimonials-container']}>
@@ -56,12 +60,28 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Read More Button */}
+        {/* Action Buttons */}
         <div className={styles['read-more-container']}>
           <div className={styles['read-more']}>
             <span>Read More Reviews</span>
             <span className={styles['arrow']}>↗</span>
           </div>
+          
+          {onOpenTestimonialModal && (
+            <div 
+              onClick={onOpenTestimonialModal}
+              className={styles['read-more']}
+              style={{ 
+                backgroundColor: 'var(--color-secondary)', 
+                color: 'white',
+                marginLeft: '1rem',
+                boxShadow: '0 4px 15px rgba(252, 116, 35, 0.3)'
+              }}
+            >
+              <span>Share Your Experience</span>
+              <span className={styles['arrow']}>↗</span>
+            </div>
+          )}
         </div>
       </div>
     </section>
