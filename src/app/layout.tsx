@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Triumph Echoes Academy - Public Speaking Excellence",
   description: "Transform into a confident communicator at Triumph Echoes Academy of Public Speaking. Programs for children, teens, and adults.",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
