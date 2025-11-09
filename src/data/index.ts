@@ -114,5 +114,5 @@ export const footerData = {
     { name: "Twitter", icon: "twitter", href: "#" },
     { name: "LinkedIn", icon: "linkedin", href: "#" }
   ],
-  copyright: "©2025 Triumph Echoes Academy | Designed By Opridoo"
+  copyright: "©2025 Triumph Echoes Academy | Designed and Built by APEKTECH INC."
 };
