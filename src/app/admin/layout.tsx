@@ -49,7 +49,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
       {/* Sidebar */}
       <div className={`sidebar ${sidebarOpen ? 'sidebar-open' : ''}`}>
         <div className="sidebar-header">
-          <h2 className="sidebar-title">Academy Admin</h2>
+          <h2 className="sidebar-title">Management</h2>
           <button 
             className="sidebar-close-btn"
             onClick={() => setSidebarOpen(false)}
@@ -95,7 +95,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
             ☰
           </button>
           <h1 className="page-title">
-            Triumph Echoes Academy - School Management
+            Triumph Echoes Academy
           </h1>
           <div className="header-actions">
             <span className="admin-user">School Administrator</span>
